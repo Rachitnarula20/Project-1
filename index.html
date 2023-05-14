@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onlinepetstore</title>
+</head>
+<style>
+    body{
+        background-image: url('background.jpg');
+    }
+    #navbar{
+        display: flex;
+        position: relative;
+        text-decoration: none;
+        height: 66px;  
+    }
+    #navbar ul{
+        display: flex;
+        text-decoration: none;
+    }
+    #navbar li{
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+    #navbar::before{
+        background-color: rgba(0, 166, 255, 0.703);
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.2;
+    }
+    #navbar ul li a{
+        margin: 20px;
+        text-decoration: none;
+        color:black;
+    }
+    #navbar ul li a:hover{
+        color: white;
+        border-radius: 22px;
+    }
+    #logo img{
+        height: 66px;
+        width: 75px;
+        transition: all 1q  s ease-in-out;
+    }
+    #logo img:hover{
+        transform: rotate(360deg);
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 349px;
+        flex-direction: column;
+        font-size: 28px;     
+    }
+    .container h1{
+border: 2px solid rgb(0, 0, 0);
+border-radius: 10px;
+color: white;
+font-weight: bold;
+background-color: rgb(11, 213, 236);
+    text-shadow:5px 4px rgb(177, 40, 5) ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.services ul li{
+    font-size: 29px;
+        list-style: none;      
+}
+.services ul li a{
+    display: flex;
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+        border:  2px solid black;
+        border-radius: 10px;
+        text-shadow:3px 2px whitesmoke ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+        transition: all 0.1s ease-in-out;  
+}
+.services ul li a:hover{
+  transform: scale(1.1);
+}
+.services{
+    font-size: 15px;
+} 
+.services ul {
+    display: flex;
+}
+</style>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="dog-face-bone-on-white-260nw-1479249569.webp" alt="onlinepetstore">
+        </div>
+<ul>
+    <li class="item"><a href="#">Home</a></li>
+    <li class="item"><a href="http://127.0.0.1:5500/Project%202/contact%20us.html" target="_blank">Contact us</a></li>
+    <li class="item"><a href="http://127.0.0.1:5500/project/about%20us.html">About us</a></li>
+</ul>
+    </div>
+    <div class="container">
+        <h1>Online Pet Store</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum expedita in ducimus reiciendis ab accusamus libero quibusdam! Nostrum qui odio deserunt? Reiciendis vitae ut corporis minima alias tenetur quam cum itaque magni labore!</p>
+    </div>
+    <div class="services">
+        <h1>Our Services</h1>
+   <ul>
+<li class="name"><a href="#">Cat food</a></li>
+<li class="name"><a href="#">Dog food</a></li>
+<li class="name"><a href="#">Pet Gromming</a></li>
+<li class="name"><a href="#">Consult a Vet online</a></li>
+   </ul>    
+</div>
+</body>
+</html>
